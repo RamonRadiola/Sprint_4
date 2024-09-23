@@ -85,7 +85,11 @@ class TestBooksCollector:
         books_collector.delete_book_from_favorites('Такси')
         assert books_collector.favorites == ['Бегущий по лезвию 2049']
 
+<<<<<<< HEAD
     def test_get_list_of_favorites_books_true(self):
+=======
+    def test_get_list_of_favorites_books(self):
+>>>>>>> origin/develop
         books_collector = BooksCollector()
         books_collector.add_new_book('Бегущий по лезвию 2049')
         books_collector.add_new_book('Чужой')
@@ -93,4 +97,9 @@ class TestBooksCollector:
         books_collector.add_book_in_favorites('Бегущий по лезвию 2049')
         books_collector.add_book_in_favorites('Такси')
         books_collector.delete_book_from_favorites('Такси')
+<<<<<<< HEAD
         assert books_collector.get_list_of_favorites_books() == ['Бегущий по лезвию 2049']
+=======
+        books_collector.delete_book_from_favorites('Бегущий по лезвию 2049')
+        assert books_collector.favorites == []
+>>>>>>> origin/develop
